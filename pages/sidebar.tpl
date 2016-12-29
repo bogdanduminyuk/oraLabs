@@ -10,7 +10,7 @@
 					echo "<li><a href='#'><i class='fa fa-pencil fa-fw'></i> Лабораторная №$i<span class='fa arrow'></span></a>";
 					echo "<ul class='nav nav-second-level'>";
 					
-					for ($j = 1; $j <= count($labs["LAB$i"]['desc']); $j++)
+					for ($j = 1; $j <= count($labs["LAB$i"]['task']); $j++)
 						echo "<li><a href='labs.php?send=1&lab=$i#task$j'>Задание №$j</a></li>";
 					
 					echo "</ul></li>";
